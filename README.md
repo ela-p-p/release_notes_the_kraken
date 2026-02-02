@@ -1,6 +1,7 @@
-# Jira App Python Server
+# AI release notes Python Server
 
-This project is a basic Python server scaffold for building a Jira app integration. It uses Flask to provide REST API endpoints and is ready to be extended for Jira API interactions.
+This project is a basic Python server scaffold for building a release notes app by integrating with JIRA and GitHub. It uses Flask to provide REST API endpoints.
+
 
 ## Getting Started
 
@@ -8,17 +9,16 @@ This project is a basic Python server scaffold for building a Jira app integrati
    ```bash
    pip install -r requirements.txt
    ```
-2. Run the server:
+2. Install pre-commit:
    ```bash
-   python server.py
+   pip install pre-commit
    ```
-3. The server will be available at http://localhost:5000
-
-## Endpoints
-- `/` : Health check
-- `/api/jira` : Receives Jira webhook POST requests
-
-## Next Steps
-- Add authentication for Jira API
-- Implement Jira API request handling
-- Extend endpoints as needed
+3. Install pre-commit hooks:
+   ```bash
+   pre-commit install
+   ```
+4. Run the server:
+   ```bash
+   python3 server.py
+   ```
+5. The server will be available at http://localhost:5050
